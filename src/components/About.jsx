@@ -11,20 +11,18 @@ function About() {
           <p className="text-4xl font-bold inline border-b-4">About</p>
         </div>
         <p className="text-xl mt-20">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci
-          eveniet dolorum iste obcaecati? Doloremque autem officiis repellendus
-          mollitia sapiente est!
+          Meu nome é Jair Dhyego, sou do Rio Grande do Norte e estudo
+          programação desde o final de 2021, estou desenvolvendo e me
+          aperfeiçoando nas tecnologias de JavaScript, TypeScript com o
+          framewoork React.
         </p>
 
         <br />
 
         <p className="text-xl">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi
-          libero magnam magni ipsum, deserunt atque tempora deleniti sint
-          quaerat dolorum assumenda voluptatibus est vero ullam recusandae
-          culpa. Officiis corporis dolorum possimus, quisquam debitis quo
-          eligendi delectus deserunt fugiat rerum doloremque enim ex mollitia
-          quam nostrum laudantium amet vitae iste. Pariatur.
+          Estou dando meus primeiros passos mas já fiz alguns projetos
+          profissionais usando, pixel perfect, styled components e requisições
+          api.
         </p>
       </div>
     </div>

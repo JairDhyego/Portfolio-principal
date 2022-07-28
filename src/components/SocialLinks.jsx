@@ -2,6 +2,7 @@ import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import front from "../Auxiliares/front.pdf";
 
 function SocialLinks() {
   const llinksSocial = [
@@ -40,7 +41,7 @@ function SocialLinks() {
           Curriculo <BsFillPersonLinesFill size={30} />
         </>
       ),
-      href: "./curriculo.pdf",
+      href: { front },
       style: "rounded-tl-md",
       download: true,
     },
