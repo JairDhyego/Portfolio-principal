@@ -1,10 +1,5 @@
 import React from "react";
-import arrayDestruct from "../assets/arrayDestruct.jpg";
-import installNode from "../assets/installNode.jpg";
-import navbar from "../assets/navbar.jpg";
-import reactParallax from "../assets/reactParallax.jpg";
-import reactSmooth from "../assets/reactSmooth.jpg";
-import reactWeather from "../assets/reactWeather.jpg";
+import bgProjetos from "../assets/bgProjetos.jpg";
 
 // Por enquanto colocar projetos pessoais
 
@@ -12,27 +7,39 @@ function Portfolio() {
   const porfolios = [
     {
       id: 1,
-      src: arrayDestruct,
+      bg: bgProjetos,
+      title: "Projeto Crud Ant-D",
+      src: "https://proj-crud-antd.vercel.app",
     },
     {
       id: 2,
-      src: installNode,
+      bg: bgProjetos,
+      title: "Teste de paginação",
+      src: "https://create-pagination.vercel.app",
     },
     {
       id: 3,
-      src: navbar,
+      bg: bgProjetos,
+      title: "Estudo de Api",
+      src: "https://api-cidade-e-estado.vercel.app",
     },
     {
       id: 4,
-      src: reactParallax,
+      bg: bgProjetos,
+      title: "jogo da velha TS",
+      src: "https://proj-jogo-da-velha.vercel.app",
     },
     {
       id: 5,
-      src: reactSmooth,
+      bg: bgProjetos,
+      title: "Cadastro de desenvolvedor",
+      src: "https://boisterous-pika-5d3141.netlify.app",
     },
     {
       id: 6,
-      src: reactWeather,
+      bg: bgProjetos,
+      title: "Fácil consulta",
+      src: "https://github.com/JairDhyego/Facil-Consulta_Entrevista",
     },
   ];
 
@@ -51,15 +58,22 @@ function Portfolio() {
 
         <div className="grid sm:grid-cols-2 md:grind-cols-3 gap-8 px-12 sm:px-0">
           {porfolios.map((item) => (
-            <div key={item.id} className="shadow-md shadow-gray-600 rounded-lg">
+            <div
+              key={item.id}
+              className="flex flex-col items-center justify-center shadow-md shadow-gray-600 rounded-lg"
+            >
               <img
-                src={item.src}
-                alt=""
+                src={item.bg}
+                style={{ width: "120px" }}
+                alt={item.title}
                 className="rounded-md duration-200 hover:scale-105"
               />
-              <div className="flex items-center justify-center">
+              <span className="py-2">{item.title}</span>
+              <div className=" flex items-center justify-center">
                 <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  Demo
+                  <a href={item.src} target="_blank">
+                    Demo
+                  </a>
                 </button>
                 <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
                   Code
